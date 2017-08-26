@@ -10,58 +10,58 @@ public class CreateLeadPage extends BasePage {
 	WebDriver driver;
 	
 	@FindBy(how = How.ID, using = "createLeadForm_companyName")
-	WebElement companyName;
+	WebElement eleCompanyName;
 	
-	public CreateLeadPage enterCompanyName(){
-		enterInput(companyName, "Kumaran");
+	public CreateLeadPage enterCompanyName(String companyName){
+		enterInput(eleCompanyName, companyName);
 		return this;
 	}
 	
 	@FindBy(how = How.ID, using = "createLeadForm_firstName")
-	WebElement firstName;
+	WebElement eleFirstName;
 	
-	public CreateLeadPage enterFirstNameName(){
-		enterInput(firstName, "Sathish");
+	public CreateLeadPage enterFirstName(String firstName){
+		enterInput(eleFirstName, firstName);
 		return this;
 	}
 	
 	@FindBy(how = How.ID, using = "createLeadForm_lastName")
-	WebElement lastName;
+	WebElement eleLastName;
 	
-	public CreateLeadPage enterlastNameName(){
-		enterInput(lastName, "Jayaraman");
+	public CreateLeadPage enterlastName(String lastName){
+		enterInput(eleLastName, lastName);
 		return this;
 	}
 	
 	@FindBy(how = How.ID, using = "createLeadForm_dataSourceId")
-	WebElement dataSourceDropdown;
+	WebElement eleDataSourceDropdown;
 	
-	public CreateLeadPage selectDatsourceDrpdwn(){
-		selectByVisibleText(dataSourceDropdown, "Conference");
+	public CreateLeadPage selectDatsourceDrpdwn(String dataSourceVal){
+		selectByVisibleText(eleDataSourceDropdown, dataSourceVal);
 		return this;
 	}
 	
 	@FindBy(how = How.ID, using = "createLeadForm_marketingCampaignId")
-	WebElement campaignDropdown;
+	WebElement eleCampaignDropdown;
 	
-	public CreateLeadPage selectCampaignDrpdwn(){
-		selectByVisibleText(campaignDropdown, "Automobile");
+	public CreateLeadPage selectCampaignDrpdwn(String campaignVal){
+		selectByVisibleText(eleCampaignDropdown, campaignVal);
 		return this;
 	}
 	
 	@FindBy(how = How.ID, using = "createLeadForm_primaryPhoneNumber")
-	WebElement primaryPhoneNumber;
+	WebElement elePrimaryPhoneNumber;
 	
-	public CreateLeadPage enterPrimaryPhoneNo(){
-		enterInput(primaryPhoneNumber, "65285206");
+	public CreateLeadPage enterPrimaryPhoneNo(String phoneNumber){
+		enterInput(elePrimaryPhoneNumber, phoneNumber);
 		return this;
 	}
 	
 	@FindBy(how = How.ID, using = "createLeadForm_primaryEmail")
-	WebElement primaryEmail;
+	WebElement elePrimaryEmail;
 	
-	public CreateLeadPage enterPrimaryEmail(){
-		enterInput(primaryEmail, "sathishjl08@gmail.com");
+	public CreateLeadPage enterPrimaryEmail(String email){
+		enterInput(elePrimaryEmail, email);
 		return this;
 	}
 	

@@ -13,13 +13,8 @@ public class LoginPage extends BasePage {
 	@FindBy(how = How.ID, using = "username")
 	WebElement userName;
 	
-	public LoginPage enterUserNameInLoginPage(){
-		enterInput(userName, "DemoSalesManager");
-		return this;		
-	}
-	
 	public LoginPage enterUsernameInLoginPage(String user){
-		enterInput(userName, "DemoSalesManager");
+		enterInput(userName, user);
 		System.out.println("Username is entered");
 		return this;
 	}
